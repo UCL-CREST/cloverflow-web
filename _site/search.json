@@ -4,7 +4,7 @@
     
     
     {
-      "title": "Welcome",
+      "title": "Empirical Study",
       "url": "/cloverflow-web/docs/home/"
 
     },
@@ -12,16 +12,16 @@
     
     
     {
-      "title": "Themes",
-      "url": "/cloverflow-web/docs/themes/"
+      "title": "Methodology",
+      "url": "/cloverflow-web/docs/methodology/"
 
     },
   
     
     
     {
-      "title": "Customization",
-      "url": "/cloverflow-web/docs/customization/"
+      "title": "Stack Overflow User Survey",
+      "url": "/cloverflow-web/docs/survey/"
 
     },
   
@@ -30,24 +30,16 @@
     
     
     {
-      "title": "Markdown Cheatsheet",
-      "url": "/cloverflow-web/docs/cheatsheet/"
+      "title": "Results",
+      "url": "/cloverflow-web/docs/results/"
 
     },
   
     
     
     {
-      "title": "Font Awesome Icon List",
-      "url": "/cloverflow-web/docs/font-awesome/"
-
-    },
-  
-    
-    
-    {
-      "title": "Bootstrap Features",
-      "url": "/cloverflow-web/docs/bootstrap/"
+      "title": "Discussions",
+      "url": "/cloverflow-web/docs/discussions/"
 
     },
   

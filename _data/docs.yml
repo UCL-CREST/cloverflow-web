@@ -1,11 +1,10 @@
-- title: Getting Started
+- title: Empirical Study &amp; Survey
   docs:
   - home
-  - themes
-  - customization
+  - methodology
+  - survey
 
-- title: Examples
+- title: Results &amp; Discussions
   docs:
-  - cheatsheet
-  - font-awesome
-  - bootstrap
+  - results
+  - discussions

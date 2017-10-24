@@ -1,7 +1,6 @@
 ---
-title: Empirical Study
-permalink: /docs/home/
-redirect_from: /docs/index.html
+layout: plain
+title: Authors
 ---
 
 ## Contributions
@@ -18,7 +17,8 @@ Our study shows that from
 the 2,302 online clones, at least 330 have been copied from open source
 projects or external online sources to Stack Overflow, potentially violating
 software licenses. For 154 of them, we found evidence that they have been copied
-from a specific open source project. 101 of them we found to be outdated.
+from a specific open source project. 101 of them we found to be outdated. %
+% and questionable for being reused.
 
 3. **Awareness of Stack Overflow answerers to toxic code snippets:**  
 We
@@ -38,32 +38,24 @@ can be used as a clone oracle.
 ## Research Questions
 
 1. **RQ1 (Online code clones)**:  
-
-   *To what extent is source code cloned between Stack Overflow and open source projects?*
-
-    We quantitatively measured the number of online code clones between Stack
-  	Overflow and open source projects to understand the scale of the
-  	problem.
+  *To what extent is source code cloned between Stack Overflow and open source projects?*
+  We quantitatively measured the number of online code clones between Stack
+	Overflow and open source projects to understand the scale of the
+	problem.
 2. **RQ2 (Patterns of online code clones):**  
-
    *Why do online code clones occur?*  
-
    We categorised online clones into seven categories allowing insights to why online code clones are created.
 3. **RQ3 (Outdated online code clones):**  
-
     *Are
 		online code clones up-to-date compared to their counterparts in the
 		original projects?*  
-
     We were interested in the outdated Stack
 	Overflow code examples since users are potentially reusing
 	them.
 4. **RQ4 (Software licensing violation):**  
-
     *How often do
 		licensing conflicts occur between Stack Overflow clones and their
 		originals?*  
-
     We investigated whether the reuse of online code clones
 	can cause software developers to violate licenses.
 5. **RQ5 (Stack Overflow answerers' awareness):**
@@ -78,3 +70,38 @@ can be used as a clone oracle.
 
 	We surveyed 607 high reputation Stack Overflow users to study their
 	awareness of the two issues.
+
+## Writing content
+
+### Docs
+
+Docs are [collections](https://jekyllrb.com/docs/collections/) of pages stored under `_docs` folder. To create a new page:
+
+**1.** Create a new Markdown as `_docs/my-page.md` and write [front matter](https://jekyllrb.com/docs/frontmatter/) & content such as:
+
+```
+---
+title: My Page
+permalink: /docs/my-page/
+---
+
+Hello World!
+```
+
+**2.** Add the pagename to `_data/docs.yml` file in order to list in docs navigation panel:
+
+```
+- title: My Group Title
+  docs:
+  - my-page
+```
+
+### Blog posts
+
+Add a new Markdown file such as `2017-05-09-my-post.md` and write the content similar to other post examples.
+
+### Pages
+
+The home page is located under `index.html` file. You can change the content or design completely different welcome page for your taste. (You can use [bootstrap componenets](http://getbootstrap.com/components/))
+
+In order to add a new page, create a new html or markdown file under root directory and link it in `_includes/topnav.html`.
