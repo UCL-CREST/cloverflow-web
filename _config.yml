@@ -1,9 +1,9 @@
 # Site settings
-title: Jekyll Doc Theme
-email: your-email@domain.com
+title: Toxic code snippets on Stack Overflow
+email: chaiyong.ragkhitwetsagul.14@ucl.ac.uk
 description: >
-  Jekyll Template for Project Websites
-  providing documentation and blog post pages.
+  Toxic code snippets on Stack Overflow
+  -- the website accompanying the TSE submission of the project.
 
 baseurl: "/cloverflow-web" # the subpath of your site, e.g. /blog/
 url: https://aksakalli.github.io/jekyll-doc-theme # the base hostname & protocol for your site
@@ -12,7 +12,7 @@ git_edit_address: https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages
 
 # theme options from https://bootswatch.com/
 # comment out this to use default Bootstrap
-bootwatch: paper
+bootwatch: united
 
 # Build settings
 markdown: kramdown
