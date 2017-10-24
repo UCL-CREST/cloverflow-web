@@ -1,5 +1,6 @@
 # Site settings
 title: Toxic code snippets on Stack Overflow
+affiliation: University College London, UK &amp; University of Molise, Italy
 email: chaiyong.ragkhitwetsagul.14@ucl.ac.uk
 description: >
   Toxic code snippets on Stack Overflow
@@ -29,7 +30,7 @@ exclude:
   - .idea/
   - .gitignore
   - README.md
-timezone: Europe/Berlin
+timezone: Europe/London
 defaults:
 - scope:
     path: _posts
@@ -43,7 +44,7 @@ defaults:
     type: docs
   values:
     layout: docs
-    sectionid: method
+    sectionid: docs
     seo:
       type: "WebPage"
 

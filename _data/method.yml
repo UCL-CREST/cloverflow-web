@@ -1,0 +1,11 @@
+- title: Getting Started
+  method:
+  - home
+  - themes
+  - customization
+
+- title: Examples
+  method:
+  - cheatsheet
+  - font-awesome
+  - bootstrap
