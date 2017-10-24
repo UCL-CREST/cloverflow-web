@@ -1,145 +1,10 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Bootstrap Features</title>
-    <meta name="description" content="ButtonsDefaultPrimarySuccessInfoWarningDangerLinkDefaultPrimarySuccessInfoWarningDangerLink  Default        Action    Another action    Something else here  ...">
+---
+title: Bootstrap Features
+permalink: /docs/bootstrap/
+---
 
 
-    <link rel="stylesheet" href="/cloverflow-web/css/main.css">
-    <link rel="stylesheet" href="/cloverflow-web/css/font-awesome.min.css">
-
-    <link rel="shortcut icon" href="/cloverflow-web/favicon.ico?1">
-    <!-- Begin Jekyll SEO tag v2.2.2 -->
-<title>Bootstrap Features | Toxic code snippets on Stack Overflow</title>
-<meta property="og:title" content="Bootstrap Features" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Buttons Default Primary Success Info Warning Danger Link Default Primary Success Info Warning Danger Link Default Action Another action Something else here Separated link" />
-<meta property="og:description" content="Buttons Default Primary Success Info Warning Danger Link Default Primary Success Info Warning Danger Link Default Action Another action Something else here Separated link" />
-<link rel="canonical" href="http://localhost:4000/cloverflow-web/docs/bootstrap/" />
-<meta property="og:url" content="http://localhost:4000/cloverflow-web/docs/bootstrap/" />
-<meta property="og:site_name" content="Toxic code snippets on Stack Overflow" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-24T18:23:36+02:00" />
-<script type="application/ld+json">
-{"@context":"http://schema.org","@type":"WebPage","headline":"Bootstrap Features","datePublished":"2017-10-24T18:23:36+02:00","dateModified":"2017-10-24T18:23:36+02:00","description":"Buttons Default Primary Success Info Warning Danger Link Default Primary Success Info Warning Danger Link Default Action Another action Something else here Separated link","url":"http://localhost:4000/cloverflow-web/docs/bootstrap/"}</script>
-<!-- End Jekyll SEO tag -->
-
-
-    <link rel="canonical" href="http://localhost:4000/cloverflow-web/docs/bootstrap/">
-    <link rel="alternate" type="application/rss+xml" title="Toxic code snippets on Stack Overflow" href="http://localhost:4000/cloverflow-web/feed.xml" />
-</head>
-
-
-<body>
-
-    <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container navbar-container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-            <a class="navbar-brand" href="/cloverflow-web/">
-                <span><img src="/cloverflow-web/img/logonav.png"></span> Toxic code snippets on Stack Overflow
-            </a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li  class="active" ><a href="/cloverflow-web/method/home/">Methodology</a></li>
-                <li ><a href="/cloverflow-web/docs/home/">Findings</a></li>
-                <li ><a href="/cloverflow-web/blog/2017/05/03/jekyll-doc-theme/">Blog</a></li>
-            </ul>
-            <div class="navbar-right">
-                <form class="navbar-form navbar-left">
-                    <div class="form-group has-feedback">
-                        <input id="search-box" type="text" class="form-control" placeholder="Search...">
-                        <i class="fa fa-search form-control-feedback"></i>
-                    </div>
-                </form>
-                <ul class="nav navbar-nav">
-                    <li><a href="https://github.com/aksakalli/jekyll-doc-theme"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</nav>
-
-
-    <div class="page-content">
-        <div class="wrapper">
-            <div class="container">
-    <div class="row">
-        <div class="col-md-4">
-          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
-          Getting Started
-        </a>
-      </h4>
-    </div>
-    <div id="collapse-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-      <ul class="list-group">
-        
-          
-          
-          <a class="list-group-item " href="/cloverflow-web/docs/home/">Welcome</a>
-        
-          
-          
-          <a class="list-group-item " href="/cloverflow-web/docs/themes/">Themes</a>
-        
-          
-          
-          <a class="list-group-item " href="/cloverflow-web/docs/customization/">Customization</a>
-        
-      </ul>
-    </div>
-  </div>
-
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-          Examples
-        </a>
-      </h4>
-    </div>
-    <div id="collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-      <ul class="list-group">
-        
-          
-          
-          <a class="list-group-item " href="/cloverflow-web/docs/cheatsheet/">Markdown Cheatsheet</a>
-        
-          
-          
-          <a class="list-group-item " href="/cloverflow-web/docs/font-awesome/">Font Awesome Icon List</a>
-        
-          
-          
-          <a class="list-group-item active" href="/cloverflow-web/docs/bootstrap/">Bootstrap Features</a>
-        
-      </ul>
-    </div>
-  </div>
-
-</div>
-
-        </div>
-
-        <div class="col-md-8">
-            <h1>Bootstrap Features</h1>
-            <div id="markdown-content-container"><h2 id="buttons">Buttons</h2>
+## Buttons
 <p>
 <a href="#" class="btn btn-default">Default</a>
 <a href="#" class="btn btn-primary">Primary</a>
@@ -148,8 +13,7 @@
 <a href="#" class="btn btn-warning">Warning</a>
 <a href="#" class="btn btn-danger">Danger</a>
 <a href="#" class="btn btn-link">Link</a>
-</p>
-<p>
+</p><p>
 <a href="#" class="btn btn-default disabled">Default</a>
 <a href="#" class="btn btn-primary disabled">Primary</a>
 <a href="#" class="btn btn-success disabled">Success</a>
@@ -157,8 +21,7 @@
 <a href="#" class="btn btn-warning disabled">Warning</a>
 <a href="#" class="btn btn-danger disabled">Danger</a>
 <a href="#" class="btn btn-link disabled">Link</a>
-</p>
-<p>
+</p><p>
 <div class="btn-group">
   <a href="#" class="btn btn-default">Default</a>
   <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
@@ -218,8 +81,7 @@
     <li><a href="#">Separated link</a></li>
   </ul>
 </div>
-</p>
-<p>
+</p><p>
 
 <a href="#" class="btn btn-primary btn-lg">Large button</a>
 <a href="#" class="btn btn-primary">Default button</a>
@@ -227,7 +89,8 @@
 <a href="#" class="btn btn-primary btn-xs">Mini button</a>
 </p>
 
-<h2 id="typography">Typography</h2>
+
+## Typography
 
 <h2>Emphasis classes</h2>
 <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
@@ -237,7 +100,8 @@
 <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
 <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
 
-<h2 id="tables">Tables</h2>
+
+## Tables
 
 <table class="table table-striped table-hover ">
   <thead>
@@ -294,7 +158,8 @@
   </tbody>
 </table>
 
-<h2 id="tabs">Tabs</h2>
+
+## Tabs
 
 <ul class="nav nav-tabs">
   <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
@@ -326,7 +191,7 @@
   </div>
 </div>
 
-<h2 id="labels">Labels</h2>
+## Labels
 
 <p>
 <span class="label label-default">Default</span>
@@ -337,7 +202,8 @@
 <span class="label label-info">Info</span>
 </p>
 
-<h2 id="list-groups">List groups</h2>
+
+## List groups
 
 <div class="row">
     <div class="col-lg-4">
@@ -384,7 +250,8 @@
     </div>
 </div>
 
-<h2 id="panels">Panels</h2>
+
+## Panels
 
 <div class="row">
     <div class="col-lg-4">
@@ -464,7 +331,8 @@
     </div>
 </div>
 
-<h2 id="wells">Wells</h2>
+
+## Wells
 
 <div class="row">
     <div class="col-lg-4">
@@ -490,87 +358,3 @@
         </div>
     </div>
 </div>
-</div>
-            <p class="text-center">
-              <br />
-              <a target="_blank" href="https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages/_docs/examples/bootstrap.md" class="btn btn-default githubEditButton" role="button">
-                <i class="fa fa-pencil fa-lg"></i> Improve this page
-              </a>
-            </p>
-            <hr>
-            
-
-
-
-
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-    <ul class="pager">
-      
-        
-        
-        <li class="previous">
-          <a href="/cloverflow-web/docs/font-awesome/">
-            <span aria-hidden="true">&larr;</span> Previous
-          </a>
-        </li>
-      
-
-      
-        <li class="next disabled">
-          <a>
-            Next <span aria-hidden="true">&rarr;</span>
-          </a>
-        </li>
-      
-    </div>
-    <div class="clear"></div>
-    
-
-        </div>
-
-    </div>
-</div>
-
-        </div>
-    </div>
-
-    <footer class="footer">
-    <div class="container">
-
-        <p class="text-center">
-            Toxic code snippets on Stack Overflow 2017 |
-            Powered by <a href="https://github.com/aksakalli/jekyll-doc-theme">Jekyll Doc Theme</a>
-        </p>
-        <!-- <p class="text-muted">Place sticky footer content here.</p> -->
-    </div>
-</footer>
-
-    <script>
-  var baseurl = '/cloverflow-web'
-</script>
-<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="/cloverflow-web/js/bootstrap.min.js "></script>
-<script src="/cloverflow-web/js/typeahead.bundle.min.js "></script>
-
-<script src="/cloverflow-web/js/main.js "></script>
-
-</body>
-
-</html>
