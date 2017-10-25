@@ -1,4 +1,12 @@
-# Jekyll Doc Theme
+# Toxic code snippets on Stack Overflow
+
+This is the source of the website accompanying a TSE submission "Toxic code snippets on Stack Overflow."
+Visit the website at [https://ucl-crest.github.io/cloverflow-web/](https://ucl-crest.github.io/cloverflow-web/).
+
+
+## Jekyll theme
+
+Our website is based on Jekyll Doc Theme.
 
 Go to [the website](https://aksakalli.github.io/jekyll-doc-theme/) for detailed information and demo.
 
