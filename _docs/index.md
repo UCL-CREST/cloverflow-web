@@ -32,7 +32,7 @@ cloned code snippets and Stack Overflow's CC BY-SA 3.0.
 
 4. **An online code clone oracle:**
 The 2,302 manually investigated and validated online clone pairs
-are available for download [here](#) and
+are available for download [here](../../downloads.html) and
 can be used as a clone oracle.
 
 ## Research Questions

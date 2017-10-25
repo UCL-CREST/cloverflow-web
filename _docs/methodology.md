@@ -20,7 +20,7 @@ We rely on two source code data sets in this study: Java code snippets in answer
 on Stack Overflow and open source projects from the [Qualitas corpus](http://qualitascorpus.com).
 
 Data set | No. of files | SLOC | Median
--------- | ------------ | ---- | ------
+-------- | -----------: | ---: | -----:
 Stack Overflow | 72,365 | 1,840,581 | 17
 Qualitas | 166,709 | 19,614,083 | 60,667
 
@@ -45,7 +45,7 @@ SourcererCC (*SCC*) | Functions, Minimum clone size=10, Similarity=80%
 ### Number of Online Clones Pairs
 
 Stats | Total clone pairs | Average clone size
------ | ----------------- | ------------------  
+----- | ----------------: | -----------------:
 Simian | 721 | 16.61
 SourcererCC | 1,678 | 17.86
 
