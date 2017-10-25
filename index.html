@@ -32,7 +32,7 @@ layout: default
         </div>
 
         <div class="col-md-6 text-center">
-            <img src="img/online_clones.jpeg" alt="" class="img-responsive">
+            <img src="img/online_clones.jpg" alt="" class="img-responsive">
         </div>
     </div>
 
@@ -93,7 +93,9 @@ layout: default
         <code class="highlighter-rouge">compare</code> method in its <code class="highlighter-rouge">WritableComparator</code>
         class. The code snippet on the right shows another version of the same method,
         but at this time extracted from the latest version (as of October 3, 2017) of
-        <a href="http://hadoop.apache.org/">Hadoop</a>. We can see that they both are highly similar except a line
+        <a href="http://hadoop.apache.org/">Hadoop</a>.
+        <br /><br />
+        We can see that they both are highly similar except a line
         containing <code class="highlighter-rouge">buffer.reset(null,0,0);</code> which was added on November
         21, 2014. The added line is intended for cleaning up the reference in the
         <code class="highlighter-rouge">buffer</code> variable and avoid excess heap usage
@@ -143,7 +145,7 @@ layout: default
         <code class="highlighter-rouge">WritableComparator</code> class in Hadoop is distributed with <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache license
         version 2.0</a> while its cloned instance on Stack Overflow contains only the
         <code class="highlighter-rouge">compare</code> method and ignores its license statement on top of the
-        file. There are two potential issues for this. First, the code snippet may appear to be
+        file.<br /><br />There are two potential issues for this. First, the code snippet may appear to be
         under Stack Overflow's <a hrer="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> instead of its original Apache
         license. Second, if the code snippet is copied and incorporated into another
         software project with a conflicting license, a legal issue may arise.
@@ -155,7 +157,9 @@ layout: default
         disrupting changes than the first one can be found in an answer to a <a href="https://stackoverflow.com/questions/801987">Stack
         Overflow question</a> regarding how to format files sizes in a human readable form.
         The figure below shows, on the left, a code snippet to perform the
-        task from the <code class="highlighter-rouge">StringUtils</code> class in <a href="http://hadoop.apache.org/">Hadoop</a>. The code snippet on the
+        task from the <code class="highlighter-rouge">StringUtils</code> class in <a href="http://hadoop.apache.org/">Hadoop</a>.
+        <br /><br />
+        The code snippet on the
         right shows another version of the same method, but at this time extracted from
         the latest version of <a href="http://hadoop.apache.org/">Hadoop</a>. We can see that
         they are totally different. The <code class="highlighter-rouge">humanReadableInt</code> method is

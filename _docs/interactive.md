@@ -1,9 +1,9 @@
 ---
-title: Methodology
-permalink: /docs/methodology/
+title: Interactive Results
+permalink: /docs/interactive/
 ---
 
-## Experimental Framework
+## Overall Discussion
 
 We designed our study in 6 phases as depicted in the figure below where
 we build different data sets to answer each of our five research
@@ -59,7 +59,7 @@ of **clone agreement** (Bellon et al., 2007) which has been used in clone resear
 studies [(Funaro et al., 2010), (Wang et al., 2013), Ragkhitwetsagul et al., 2016)] to merge clones from two data sets. Clone pairs agreed by both clone detection tools have a high
 likelihood to be duplicate and must be merged.
 
-![clone merging](../../img/clone_merging.jpeg "Clone Merging Results")
+![clone merging](../../img/clone_merging.png "Clone Merging Results")
 
 Using the ok-match criterion with a predefined threshold *t* of 0.7
 similar to Bellon's study (Bellon et al., 2007), we merge 721 clone pairs from
@@ -92,7 +92,7 @@ The two investigators separately went through each clone
 pair candidate, looked at the clones, and decided if they are a true positive or
 a false positive.
 
-![classification process](../../img/classification_process.jpeg "Classification Process")
+![classification process](../../img/classification_process.png "Classification Process")
 
 Then, by following the step shown in the figure above, they classified the clones into an appropriate pattern as displayed in the table below. After the validation, the results from the two investigators were compared and conflicts were resolved.
 
@@ -101,9 +101,9 @@ Then, by following the step shown in the figure above, they classified the clone
 
 Pattern | Description
 ------- | -----------
-QS | Cloned from Qualitas project to Stack Overflow (Q <i class="fa fa-long-arrow-right" aria-hidden="true"></i> S)
-SQ | Cloned from Stack Overflow to Qualitas project (S <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Q)
-EX | Cloned from an external source to Stack Overflow (X <i class="fa fa-long-arrow-right" aria-hidden="true"></i> S)
+QS | Cloned from Qualitas project to Stack Overflow (Q --> S)
+SQ | Cloned from Stack Overflow to Qualitas project (S --> Q)
+EX | Cloned from an external source to Stack Overflow (X --> S)
 UD | Cloned from each other or from an external source outside the project (unknown)
 ------- | -----------
 BP | Boiler-plate or IDE auto-generated

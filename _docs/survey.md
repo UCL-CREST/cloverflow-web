@@ -9,9 +9,12 @@ Overflow users to take an online survey. The survey was used for assessing aware
 the developers on the two issues of outdated code and license-violating code
 snippets.
 
+![online survey](../../img/survey.png "Online Survey")
+
 The participants were invited to take the survey via email addresses available
-on their public Stack Overflow and GitHub profiles. We selected the answerers
-based on the <a href="https://stackoverflow.com/users?tab=Reputation&filter=all">all-time reputation ranking</a>. The
+on their public [Stack Overflow](https://stackoverflow.com) and [GitHub](https://github.com)
+profiles. We selected the answerers
+based on the [all-time reputation ranking](https://stackoverflow.com/users?tab=Reputation&filter=all). The
 invited participants had a reputation from 963,731 (the highest) to 6,999 and
 we sent out 607 emails (excluding undelivered ones, e.g. due to
 illegal email addresses).
