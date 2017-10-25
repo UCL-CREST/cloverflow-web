@@ -143,6 +143,8 @@ Less than a year | 1 | 0.5%
 5 -- 10 years | 58 | 28.9%
 More than 10 years	| 111 | 55.2%
 
+#### Code Snippets in Answers
+
 <p style="text-align: center;">Table 8: Frequency of including code snippets in answers</p>
 
 Include code snippets | Amount | Percent
