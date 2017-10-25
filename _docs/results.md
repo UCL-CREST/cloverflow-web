@@ -4,7 +4,12 @@ permalink: /docs/results/
 ---
 
 ### RQ1: Online Code Clones
-#### *To what extent is source code cloned between Stack Overflow and open source projects?*
+
+<div class="panel panel-default">
+    <div class="panel-body rq text-primary">
+        To what extent is source code cloned between Stack Overflow and open source projects?
+    </div>
+</div>
 
 <p style="text-align: center;">Table 1: Investigated online clone pairs and corresponding snippets and Qualitas projects</p>
 
@@ -14,16 +19,28 @@ Reported clones | 2,302 | 460 | 59 | 53.10%
 --- | ----- | -------- | -------- | ------------
 TP from manual validation | 2,076 | 443 | 59 | 53.89%
 
-> We found more than half (53%) of Qualitas projects to share
-	similar code with Stack Overflow code snippets. In the manually confirmed
-	data set of 2,302 clone pairs, we found 2,076 pairs as true positives which
-	account for 59 Qualitas projects and
-	443 Stack Overflow code snippets.
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h3 class="panel-title">Answer to RQ 1</h3>
+    </div>
+    <div class="panel-body">
+    We found more than half (53%) of Qualitas projects to share
+    	similar code with Stack Overflow code snippets. In the manually confirmed
+    	data set of 2,302 clone pairs, we found 2,076 pairs as true positives which
+    	account for 59 Qualitas projects and
+    	443 Stack Overflow code snippets.
+    </div>
+</div>
 
 ***
 
 ### RQ2: Patterns of Online Code Cloning
-#### *Why do online code clones occur?*
+
+<div class="panel panel-default">
+    <div class="panel-body rq text-primary">
+        Why do online code clones occur?
+    </div>
+</div>
 
 <p style="text-align: center;">Table 2: Classifications of online clone pairs</p>
 
@@ -32,19 +49,31 @@ Set | QS | SQ | EX | UD | BP | IN | AC | Total
 Before consolidation | 248 | 1 | 199 | 107 | 1,505 | 16 | 226 | 2,302
 After consolidation | 154 | 1 | 111 | 65 | 217 | 9 | 53 | 560
 
-> We found 154 pairs with
-	strong evidences to be cloned from 23 Qualitas projects to Stack Overflow, 1 pair
-	was cloned from Stack Overflow to Qualitas, and
-	111 pairs were found to be cloned to Stack Overflow from external
-	sources. However, the largest amount of the clone pairs
-	between Stack Overflow and Qualitas projects are boiler-plate code
-	(217), followed by 65 clone pairs with no evidence that the code has actually been copied,
-	and 16 pairs of clones due to implementing the same interface or inheriting the same class.
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h3 class="panel-title">Answer to RQ 2</h3>
+    </div>
+    <div class="panel-body">
+    We found 154 pairs with
+     strong evidences to be cloned from 23 Qualitas projects to Stack Overflow, 1 pair
+     was cloned from Stack Overflow to Qualitas, and
+     111 pairs were found to be cloned to Stack Overflow from external
+     sources. However, the largest amount of the clone pairs
+     between Stack Overflow and Qualitas projects are boiler-plate code
+     (217), followed by 65 clone pairs with no evidence that the code has actually been copied,
+     and 16 pairs of clones due to implementing the same interface or inheriting the same class.
+    </div>
+</div>
 
 ***
 
 ### RQ3: Outdated Online Code Clones
-#### *Are online code clones up-to-date compared to their counterparts in the original projects?*
+
+<div class="panel panel-default">
+    <div class="panel-body rq text-primary">
+        Are online code clones up-to-date compared to their counterparts in the original projects?
+    </div>
+</div>
 
 <p style="text-align: center;">Figure 1: Outdated QS online clone pairs group by projects</p>
 
@@ -78,16 +107,28 @@ Post | Date | Project | File | Start | End | Date | Issue ID | Type* | Date
 
 Note: *S*: modified/added/deleted statements, *D*: file has been deleted,  *R*: method has been rewritten completely
 
-> Our results show that 66% (101) of QS clone pairs on Stack
-	Overflow are outdated. 86 pairs differ from their newest versions by
-	modifications applied to variable names or method names, added or deleted
-	statements, to a fully rewritten code with new method signatures. 15 pairs are
-	dead snippets.
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h3 class="panel-title">Answer to RQ 3</h3>
+    </div>
+    <div class="panel-body">
+    Our results show that 66% (101) of QS clone pairs on Stack
+    	Overflow are outdated. 86 pairs differ from their newest versions by
+    	modifications applied to variable names or method names, added or deleted
+    	statements, to a fully rewritten code with new method signatures. 15 pairs are
+    	dead snippets.
+    </div>
+</div>
 
 ***
 
 ### RQ4: Software Licensing Violation
-#### *Do licensing conflicts occur between Stack Overflow clones and their originals?*
+
+<div class="panel panel-default">
+    <div class="panel-body rq text-primary">
+        Do licensing conflicts occur between Stack Overflow clones and their originals?
+    </div>
+</div>
 
 <p style="text-align: center;">Table 5: License mapping of online clones (file-level)</p>
 
@@ -115,11 +156,18 @@ Incompatible | AGPLv3/3+ | No license | 1 | | 4
 			| LesserGPLv2.1+ | New BSD3 | 1 | |
 **Total** | | | **86** | **78** | **50**
 
-> We found 214 code snippets on Stack Overflow that
-	could violate the license of their original software. The majority of them
-	do not contain licensing statements after they have been copied to
-	Stack Overflow. For 164 of them, we were able to identify,
-        with evidence, where the code snippet has been copied from.
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h3 class="panel-title">Answer to RQ 4</h3>
+    </div>
+    <div class="panel-body">
+    We found 214 code snippets on Stack Overflow that
+    	could violate the license of their original software. The majority of them
+    	do not contain licensing statements after they have been copied to
+    	Stack Overflow. For 164 of them, we were able to identify,
+            with evidence, where the code snippet has been copied from.
+    </div>
+</div>
 
 ***
 
@@ -143,7 +191,7 @@ Less than a year | 1 | 0.5%
 5 -- 10 years | 58 | 28.9%
 More than 10 years	| 111 | 55.2%
 
-#### Code Snippets in Answers
+#### Code snippets in answers
 
 <p style="text-align: center;">Table 8: Frequency of including code snippets in answers</p>
 
@@ -160,5 +208,79 @@ Total | 201 | 100%
 <p style="text-align: center;">Figure 2: The sources of code snippets in Stack Overflow answers</p>
 
 ![snippet sources](../../img/snippet_source.png "Snippet Sources")
+
+#### Outdated code snippets
+
+<div class="panel panel-default">
+    <div class="panel-body rq text-primary">
+        RQ 5.1: How often are Stack Overflow answerers aware of the outdated code when they answer a question on Stack Overflow?
+    </div>
+</div>
+
+<p style="text-align: center;">Table 9: Notifications of outdated code snippets in answers</p>
+
+Notified of outdated code | Amount | Percent
+--------------------- | -----: | ------:
+Very frequently (81--100% of my answers) | 2 | 1%
+Frequently (61--80% of my answers) | 1 | 0.5%
+Occasionally (41--60% of my answers) | 9 | 4.5%
+Rarely (21--40% of my answers) | 16 | 8%
+Very rarely (1--20% of my answers) | 103 | 51.5%
+Never (0% of my answers) | 69 | 34.5%
+
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h3 class="panel-title">Answer to RQ 5.1</h3>
+    </div>
+    <div class="panel-body">
+    Although most of the Stack Overflow answerers are aware that their code
+    can be outdated. 51.5% of the answerers were very rarely notified while 35.5% have never been notified of
+    outdated code in the answers. After being notified, 19.8% of them rarely or never fix the outdated code.
+    </div>
+</div>
+
+
+#### License of code snippets
+
+<div class="panel panel-default">
+    <div class="panel-body rq text-primary">
+        RQ 5.2: How often are Stack Overflow answerers aware of licensing conflicts when they answer a question on Stack Overflow?
+    </div>
+</div>
+
+<p style="text-align: center;">Inclusion of software license in answer</p>
+
+Include license? | Amount
+---------------- | -----:
+No. | 197
+Yes, in code comment |	1
+Yes, in text surrounding the code | 2
+Total | 200
+
+<p style="text-align: center;">Checking for licensing conflicts with CC BY-SA 3.0</p>
+
+Check license conflicts? | Amount | Percent
+------------------------ | -----: | ------:
+Very Frequently (81--100% of the time)	| 14 | 7%
+Frequently (61--80% of the time) | 7 | 3.5%
+Occasionally (41--60% of the time) | 10 | 5%
+Rarely (21--40% of the time) | 16 | 8%
+Very rarely (1--20% of the time) | 15 | 7.5%
+Never (0% of the time) | 138 | 69%
+Total | 200 | 100%
+
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h3 class="panel-title">Answer to RQ 5.2</h3>
+    </div>
+    <div class="panel-body">
+    124 answerers out of 200 (62%) are aware of Stack Overflow's
+    CC BY-SA 3.0 license applied to code snippets in questions and answers. However,
+    only 3 answerers explicitly include software license in their answers. Some
+    answerers choose to include the license in their profile page instead. 69% of the
+    answerers never check for licensing conflicts between their copied code snippets
+    and Stack Overflow's CC BY-SA 3.0.
+    </div>
+</div>
 
 ***
