@@ -1,156 +1,117 @@
 ---
-title: Discussions
+title: Open Comments & Discussions
 permalink: /docs/discussions/
 ---
 
-## Overall Discussion
+## Open Comments
 
-We designed our study in 6 phases as depicted in the figure below where
-we build different data sets to answer each of our five research
-questions.
+We also invited the participants to give a
+free-form comment regarding their concerns of answering Stack Overflow with code
+snippets. Besides the one we present earlier in the introduction, these are
+interesting comments we received.
 
-![experimental framework](../../img/exp_framework.jpeg "Experimental Framework")
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title">Comment 1</h3>
+    </div>
+    <div class="panel-body">
+    The real issue is less about the amount the code snippets
+    	on SO than it is about the staggeringly high number of software
+    	professionals that mindlessly use them without understanding what they're
+    	copying, and the only slightly less high number of would-be professionals that
+    	post snippets with built-in security issues.  A related topic is beginners who
+    	post (at times dangerously) misleading tutorials online on topics they actually
+    	know very little about. Think PHP/MySQL tutorials written 10+ years after
+    	<code class="highlighter-rouge">mysql_*</code> functions were obsolete, or the recent regex tutorial that
+    	got posted the other day on HackerNew
+      (<a href="https://news.ycombinator.com/item?id=14846506">https://news.ycombinator.com/item?id=14846506</a>). They're also full of
+    	toxic code snippets.
+    </div>
+</div>
 
-***
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title">Comment 2</h3>
+    </div>
+    <div class="panel-body">
+    When I copy code it's usually short enough to be considered "fair
+    		use" but I am not a lawyer or copyright expert so some guidance from Stack Overflow would be
+    		helpful. I'd also like the ability to flag/review questions that violate these
+    		guidelines.
+    </div>
+</div>
 
-## Phase 1: Clone Identification
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title">Comment 3</h3>
+    </div>
+    <div class="panel-body">
+    My only concern, albeit minor, is that I know people blindly copy
+    		my code without even understanding what the code does.
+    </div>
+</div>
 
-### Data Sets
-We rely on two source code data sets in this study: Java code snippets in answers
-on Stack Overflow and open source projects from the [Qualitas corpus](http://qualitascorpus.com).
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title">Comment 4</h3>
+    </div>
+    <div class="panel-body">
+    The main problem for me/us is outdated code, esp. as old answers
+    		have high google rank so that is what people see first, then try and fail. Thats
+    		why we're moving more and more of those examples to knowledge base and docs and
+    		rather link to those.
+    </div>
+</div>
 
-Data set | No. of files | SLOC | Median
--------- | ------------ | ---- | ------
-Stack Overflow | 72,365 | 1,840,581 | 17
-Qualitas | 166,709 | 19,614,083 | 60,667
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title">Comment 5</h3>
+    </div>
+    <div class="panel-body">
+    Lot of the answers are from hobbyist so the quality is poor.
+    		Usually they are hacks or workarounds (even MY best answer on Stack Overflow is a
+    		workaround).
+    </div>
+</div>
 
-### Clone Detection Tools
-1. [**Simian**](http://www.harukizaemon.com/simian/) is a text-based clone detector that locates clones at line-level
-granularity and has been used extensively in several clone
-studies [(Ragkhitwetsagul et al., 2016),(Ragkhitwetsagul et al., 2017), (Wang et al., 2013), (Mondal et al., 2011), (Cheung et al., 2015), (Krinke et al., 2010)].
-2. [**SourcererCC**](https://github.com/Mondego/SourcererCC) (Sajnani et al., 2016) is a scalable token-based clone
-detector which detects clones, of type-1 up to type-3, at either function- or block-level granularity.
+## Discussions
 
-### Clone Detection Configuration
+Our study discovers links from code in open source projects to code snippets on
+Stack Overflow using clone detection techniques. These links enable us to
+discover toxic code snippets with outdated code or licensing problems.
+The links can be exploited further to mitigate the problems of reusing outdated online clones and
+incompatible license on Stack Overflow code snippets. We propose the following
+actionable items:
 
-We configured Simian and
-SourcererCC based on their established default configurations chosen by the
-tools' creators.
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Preventive measure</h3>
+    </div>
+    <div class="panel-body">
+    We encourage Stack Overflow to enforce attribution when source code snippets have
+    	been copied *from* licensed software projects to Stack Overflow. Moreover, an
+    	IDE plug-in that can automatically detect pasted source code and follow the link
+    	to Stack Overflow and then to the original open source projects, could also
+    	prevent the issue of license violation.
+    </div>
+</div>
 
-Tool | Configurations
----- | --------------
-Simian (*S*) | Threshold=10, ignoreStringCase, ignoreCharacterCase, ignoreModifiers
-SourcererCC (*SCC*) | Functions, Minimum clone size=10, Similarity=80%
-
-### Number of Online Clones Pairs
-
-Stats | Total clone pairs | Average clone size
------ | ----------------- | ------------------  
-Simian | 721 | 16.61
-SourcererCC | 1,678 | 17.86
-
-***
-
-## Phase 2: Clone Merging
-
-Clones from the two detectors can be
-duplicated. To avoid double-counting of the same clone pair, we adopted the idea
-of **clone agreement** (Bellon et al., 2007) which has been used in clone research
-studies [(Funaro et al., 2010), (Wang et al., 2013), Ragkhitwetsagul et al., 2016)] to merge clones from two data sets. Clone pairs agreed by both clone detection tools have a high
-likelihood to be duplicate and must be merged.
-
-![clone merging](../../img/clone_merging.png "Clone Merging Results")
-
-Using the ok-match criterion with a predefined threshold *t* of 0.7
-similar to Bellon's study (Bellon et al., 2007), we merge 721 clone pairs from
-Simian and 1,678 clone pairs from SourcererCC into a single set of 2,302 online
-clone pairs.
-
-There are only 97 common clone pairs between the two clone sets
-as depicted in the figure above.  The low number of common
-clone pairs is due to SourcererCC reporting clones with method
-boundaries while Simian is purely line-based.
-
-***
-
-## Phase 3-4: Validation and Classification
-
-We used the 2,302 merged clone pairs for
-manual validation and classification.
-The validation and classification of the pairs was done at the same time.
-The clone validation process (phase 3 in the framework) involves checking
-if a clone pair is a true positive or a false positive.
-
-Moreover, we are also interested in
-the patterns of code cloning so we can gain more insights into
-how these clones are created (phase 4 in the framework).
-
-### Manual investigation
-To mitigate the human error, we deployed two persons in the manual clone
-investigation process.
-The two investigators separately went through each clone
-pair candidate, looked at the clones, and decided if they are a true positive or
-a false positive.
-
-![classification process](../../img/classification_process.png "Classification Process")
-
-Then, by following the step shown in the figure above, they classified the clones into an appropriate pattern as displayed in the table below. After the validation, the results from the two investigators were compared and conflicts were resolved.
-
-
-### The online cloning classification patterns
-
-Pattern | Description
-------- | -----------
-QS | Cloned from Qualitas project to Stack Overflow (Q --> S)
-SQ | Cloned from Stack Overflow to Qualitas project (S --> Q)
-EX | Cloned from an external source to Stack Overflow (X --> S)
-UD | Cloned from each other or from an external source outside the project (unknown)
-------- | -----------
-BP | Boiler-plate or IDE auto-generated
-IN | Inheritance, interface implementation
-AC | Accidental similarity, false clones
-
-***
-
-## Phase 5: Outdated Clones
-
-To search for outdated online code clones, we focused on the **QS** clone
-pairs that were cloned from Qualitas to Stack Overflow and compared them with
-their latest versions. We downloaded the latest version of the Qualitas projects
-from their repositories on October 3, 2017.
-
-For each **QS** online clone
-pair, we used the clone from Qualitas as a proxy. We searched for its latest
-version by the file name and located the cloned region in the file based on the
-method name or specific code statements. We then compared the Stack Overflow
-snippet to its latest version line-by-line to find if any change has been made
-to the source code.
-
-We also made sure that the changes did not come from the
-modifications made to the Stack Overflow snippets by the posters but from the
-updates in the projects themselves. When we found inconsistent lines between the
-two versions, we used `git blame` to see who modified those lines
-of code and the timestamps. We also collected IDs of issue tracking information
-if the code change is linked to an automatic issue tracking system, such as Jira
-or BugZilla.
-
-***
-
-## Phase 6: Licensing Analysis
-
-We analysed licensing conflicts of the online clones in the **QS**,
-**EX**, and **UD** set. The licenses were extracted by [**Ninka**](http://ninka.turingmachine.org/),
-an automatic license identification tool (German et al., 2010).
-
-Since Ninka works at
-file level, we report the findings based on Stack Overflow snippets and Qualitas
-source files instead of the clone pairs (duplicates were ignored). For the ones
-that could not be automatically identified by Ninka and have been reported as
-`SeeFile` or `Unknown`, we looked at them manually
-to see if any license can be found.
-
-For EX clone pairs that are cloned from
-external sources such as JDK or websites, we manually searched for the license
-of the original code.
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Detective measure</h3>
+    </div>
+    <div class="panel-body">
+    A system to detect outdated source code snippets on Stack Overflow is needed. The
+  	system can leverage the online clone detection techniques in this study to
+  	periodically check if the cloned snippets are still up-to-date with their
+  	originals.
+  	With such a system, the poster can be notified when the code has been updated
+  	in the original project so that he/she can update their code on Stack Overflow
+  	accordingly. On the other hand, with a crowdsourcing solution using an IDE
+  	plug-in, developers can also report the corrected version of outdated code back
+  	to the original Stack Overflow threads when they reuse outdated code and make
+  	corrections to them.
+    </div>
+</div>
 
 ***
