@@ -17,7 +17,7 @@ title: Downloads
             contains the complete information from the manual investigation (e.g. comments from the investigators, latest version of code, licensing, git blame, modification types)</p>
             <a href="files/clones.csv" class="btn btn-primary">CSV</a>
             <a href="#" class="btn btn-primary">JSON</a>
-            <a href="https://github.com/cragkhit/onlineclone_processor" class="btn btn-primary">Python script (for JSON file)</a>
+            <a href="https://github.com/cragkhit/onlineclone_processor" class="btn btn-primary">Python script</a>
           </div>
       </div>
     </div>
