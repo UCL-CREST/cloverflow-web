@@ -54,7 +54,7 @@ title: Downloads
           </div>
           <div class="panel-body">
             <p>72,365 Java code snippets in accepted answers on Stack Overflow extracted from the Stack Exchange data dump on January 2016.</p>
-            <a href="http://cloverflow-exqs.firebaseapp.com/" class="btn btn-success">Download here</a>
+            <a href="files/stackoverflow.tar.gz" class="btn btn-success">Download here</a>
           </div>
       </div>
     </div>
