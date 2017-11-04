@@ -16,7 +16,7 @@ title: Downloads
             <p>The files below contains 2,302 online code clones reported in the study. The CSV file contains only the clone pairs and their classifications while JSON file
             contains the complete information from the manual investigation (e.g. comments from the investigators, latest version of code, licensing, git blame, modification types)</p>
             <a href="files/clones.csv" class="btn btn-primary">CSV</a>
-            <a href="#" class="btn btn-primary">JSON</a>
+            <a href="files/clones.json" class="btn btn-primary">JSON</a>
             <a href="https://github.com/cragkhit/onlineclone_processor" class="btn btn-primary">Python script</a>
           </div>
       </div>
