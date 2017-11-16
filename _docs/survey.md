@@ -23,4 +23,4 @@ The survey was
 open for participation for two months, from 25 July to 25 September 2017, before
 we collected and analysed the responses.
 
-The complete survey results can be found in our [UCL CS Research Note](#).
+The complete survey results can be found in our [UCL CS Research Note](http://www.cs.ucl.ac.uk/fileadmin/UCL-CS/research/Research_Notes/cloverflow_survey_rn-17-10.pdf).
