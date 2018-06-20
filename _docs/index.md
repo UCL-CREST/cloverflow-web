@@ -15,7 +15,7 @@ classified all of them.
 
 2. **An investigation of toxic code snippets on Stack Overflow:**  
 Our study shows that from
-the 2,289 online clones, at least 214 have been copied from open source
+the 2,289 online clones, at least 328 have been copied from open source
 projects or external online sources to Stack Overflow, potentially violating
 software licenses. For 153 of them, we found evidence that they have been copied
 from a specific open source project. 100 of them we found to be outdated.
