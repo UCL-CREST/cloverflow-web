@@ -61,12 +61,12 @@ likelihood to be duplicate and must be merged.
 
 ![clone merging](../../img/clone_merging.jpeg "Clone Merging Results")
 
-Using the ok-match criterion with a predefined threshold *t* of 0.7
+Using the ok-match criterion with a predefined threshold *t* of 0.5
 similar to Bellon's study (Bellon et al., 2007), we merge 721 clone pairs from
-Simian and 1,678 clone pairs from SourcererCC into a single set of 2,302 online
+Simian and 1,678 clone pairs from SourcererCC into a single set of 2,289 online
 clone pairs.
 
-There are only 97 common clone pairs between the two clone sets
+There are only 110 common clone pairs between the two clone sets
 as depicted in the figure above.  The low number of common
 clone pairs is due to SourcererCC reporting clones with method
 boundaries while Simian is purely line-based.
@@ -75,7 +75,7 @@ boundaries while Simian is purely line-based.
 
 ## Phase 3-4: Validation and Classification
 
-We used the 2,302 merged clone pairs for
+We used the 2,289 merged clone pairs for
 manual validation and classification.
 The validation and classification of the pairs was done at the same time.
 The clone validation process (phase 3 in the framework) involves checking
@@ -108,7 +108,7 @@ UD | Cloned from each other or from an external source outside the project (unkn
 ------- | -----------
 BP | Boiler-plate or IDE auto-generated
 IN | Inheritance, interface implementation
-AC | Accidental similarity, false clones
+NC | Not clones
 
 ***
 
@@ -132,7 +132,7 @@ updates in the projects themselves. When we found inconsistent lines between the
 two versions, we used `git blame` to see who modified those lines
 of code and the timestamps. We also collected IDs of issue tracking information
 if the code change is linked to an automatic issue tracking system, such as Jira
-or BugZilla.
+or BugZilla. 
 
 ***
 

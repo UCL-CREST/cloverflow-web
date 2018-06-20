@@ -10,10 +10,10 @@ title: Downloads
     <div class="bs-component">
       <div class="panel panel-primary">
           <div class="panel-heading">
-              <h3 class="panel-title">2,302 Online Clones in the Study</h3>
+              <h3 class="panel-title">2,289 Online Clones in the Study</h3>
           </div>
           <div class="panel-body">
-            <p>The files below contains 2,302 online code clones reported in the study. The CSV file contains only the clone pairs and their classifications while JSON file
+            <p>The files below contains 2,289 online code clones reported in the study. The CSV file contains only the clone pairs and their classifications while JSON file
             contains the complete information from the manual investigation (e.g. comments from the investigators, latest version of code, licensing, git blame, modification types)</p>
             <a href="files/clones.csv" class="btn btn-primary">CSV</a>
             <a href="files/clones.zip" class="btn btn-primary">JSON</a>
@@ -27,7 +27,7 @@ title: Downloads
     <div class="bs-component">
       <div class="panel panel-primary">
           <div class="panel-heading">
-              <h3 class="panel-title">Web Application of 2,302 Online Clones in the Study</h3>
+              <h3 class="panel-title">Web Application of 2,289 Online Clones in the Study</h3>
           </div>
           <div class="panel-body">
             <p>We developed a web application for the manual clone validation and classification phase.

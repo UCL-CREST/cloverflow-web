@@ -5,7 +5,7 @@ permalink: /docs/discussions/
 
 ## Open Comments
 
-We also invited the participants to give a
+We also invited the Answerers survey's participants to give a
 free-form comment regarding their concerns of answering Stack Overflow with code
 snippets. Besides the one we present earlier in the introduction, these are
 interesting comments we received.
@@ -89,7 +89,7 @@ actionable items:
     </div>
     <div class="panel-body">
     We encourage Stack Overflow to enforce attribution when source code snippets have
-    	been copied *from* licensed software projects to Stack Overflow. Moreover, an
+    	been copied <b>from</b> licensed software projects to Stack Overflow. Moreover, an
     	IDE plug-in that can automatically detect pasted source code and follow the link
     	to Stack Overflow and then to the original open source projects, could also
     	prevent the issue of license violation.
